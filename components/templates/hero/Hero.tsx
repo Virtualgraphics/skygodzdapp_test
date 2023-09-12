@@ -7,15 +7,15 @@ const Hero = () => {
     return (
 
       <>
-      <div className="bg-indigo-500/20 px-4 py-10 mx-auto sm:max-w-xl md:max-w-full mt-none lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10 rounded-3xl mt-10" >
+      <div className="bg-indigo-500/20 px-4 py-10 mx-auto sm:px-8 sm:max-w-xl md:max-w-full mt-none lg:w-3/4 md:px-24 lg:px-8 lg:py-10 rounded-3xl mt-10" >
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="lg:pr-10">
             
-            <h1 className="mb-4 text-4xl font-extrabold leading-none text-yellow-100 font-Cinzel" >
+            <h1 className="tracking-wide mb-4 text-4xl font-semibold text-yellow-100 font-Cinzel" >
               SKY GODZ STARDAPP
               <br className="hidden md:block" /> </h1>
 
-              <h5 className="mb-4 text-2xl font-extrabold leading-none text-white font-Cinzel" >
+              <h5 className="mb-4 text-xl font-extrabold leading-none text-white font-Cinzel " >
               The powerful Story of the Universe
               
             </h5>
