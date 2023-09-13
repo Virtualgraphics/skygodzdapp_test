@@ -19,7 +19,7 @@ function NavBar() {
               height={750}
             />
      </div>
-     <div className="block lg:hidden md:hidden">
+     <div className="block lg:hidden ">
        <button
          onClick={() => setIsOpen(!isOpen)}
          className="flex items-center px-3 py-2 rounded text-white hover:text-black-400 "

@@ -16,7 +16,7 @@ const Token = () => {
       return (
 
 
-        <div className="justify-center px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-lg md:px-24 lg:px-8 lg:pt-20">
+        <div className="justify-center px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-lg md:px-24 lg:px-8 lg:pt-10">
         <div className="max-w-screen-sm sm:text-center sm:mx-auto">
           
   
