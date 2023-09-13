@@ -12,27 +12,27 @@ function NavBar() {
      <div className="flex items-center flex-shrink mr-6 lg:mr-72">
 
      <Image
-              className=" h-10 w-auto lg:h40 sm:w-auto justfy-left"
+              className=" h-10 w-auto lg:h40 lg:ml-20 sm:w-auto justfy-left"
               src="/assets/skygodz_logo_thin.svg"
               alt="Sky Godz Logo"
               width={1260}
               height={750}
             />
      </div>
-     <div className="block lg:hidden">
+     <div className="block lg:hidden md:hidden">
        <button
          onClick={() => setIsOpen(!isOpen)}
-         className="flex items-center px-3 py-2 rounded text-white hover:text-black-400"
+         className="flex items-center px-3 py-2 rounded text-white hover:text-black-400 "
        >
          <svg
-           className={`fill-current h-3 w-3 ${isOpen ? "hidden" : "block"}`}
+           className={`fill-current h-6 w-6 ${isOpen ? "hidden" : "block"}`}
            viewBox="0 0 20 20"
            xmlns="http://www.w3.org/2000/svg"
          >
            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
          </svg>
          <svg
-           className={`fill-current h-3 w-3 ${isOpen ? "block" : "hidden"}`}
+           className={`fill-current h-6 w-6 ${isOpen ? "block" : "hidden"}`}
            viewBox="0 0 20 20"
            xmlns="http://www.w3.org/2000/svg"
          >
