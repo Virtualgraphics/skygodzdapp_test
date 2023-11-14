@@ -9,7 +9,7 @@ function NavBar() {
 
  return (
    <nav className="flex items-center justify-between flex-wrap p-4 border-b border-blue-200 bg-black">
-     <div className="flex items-center flex-shrink mr-6 lg:mr-72">
+     <div className="flex items-center flex-shrink  lg:mr-8">
 
      <Image
               className=" h-10 w-auto lg:h40 lg:ml-20 sm:w-auto justfy-left"
@@ -43,7 +43,7 @@ function NavBar() {
      <div
        className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}
      >
-       <div className="text-md font-Proza lg:flex-grow">
+       <div className="text-md text-center font-Proza lg:flex-grow">
 
          <Link href="/" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-12  text-white hover:text-yellow-100 ">
            HOMEWORLD
@@ -61,7 +61,7 @@ function NavBar() {
            MARKETPLACE
          </Link>
        </div>
-       <div className="py-2 mr-12">
+       <div className="py-2 mr-12 ">
        <ConnectWallet />
        </div>
      </div>

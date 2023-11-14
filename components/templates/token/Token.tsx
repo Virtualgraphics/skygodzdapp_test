@@ -102,18 +102,10 @@ className="flex-grow  h-10 px-2 mb-3 text-black text-base transitiom duration-20
     </div>
    
    
-    <div className='w-60 flex items-center justify-center m-auto'>
-    <Web3Button 
-        
-         
-          contractAddress="0x94B0E73c4328A53ccc2CdeDbEeB2aF625984Af90"
-          action={(contract) => contract.erc20.claim(amountToClaim)}
-          onSuccess={() => alert("Claimed!")}
-          onError={(err) => alert(err)}
-        >
-          Claim STARDUST
-        
-          </Web3Button></div>
+    <div className="justify-center pb-8">
+<button className="bg-blue-500 hover:bg-blue-700 text-white w-40 h-10 font-bold  px-4 rounded mt-1 m-auto">
+            Coming soon</button>
+          </div>
          </div>
               </div>
 </div>
