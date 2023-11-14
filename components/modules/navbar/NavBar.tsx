@@ -9,10 +9,10 @@ function NavBar() {
 
  return (
    <nav className="flex items-center justify-between flex-wrap p-4 border-b border-blue-200 bg-black">
-     <div className="flex items-center flex-shrink  lg:mr-8">
+     <div className="flex items-center flex-shrink  lg:mr-8 lg:ml-8">
 
      <Image
-              className=" h-10 w-auto lg:h40 lg:ml-20 sm:w-auto justfy-left"
+              className=" h-8 w-auto sm:w-auto justfy-left"
               src="/assets/skygodz_logo_thin.svg"
               alt="Sky Godz Logo"
               width={1260}
@@ -57,7 +57,7 @@ function NavBar() {
          <Link href="token" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-12  text-white hover:text-yellow-100">
            TOKENS
          </Link>
-         <Link href="/" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-12  text-white hover:text-yellow-100">
+         <Link href="marketplace" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-12  text-white hover:text-yellow-100">
            MARKETPLACE
          </Link>
        </div>
