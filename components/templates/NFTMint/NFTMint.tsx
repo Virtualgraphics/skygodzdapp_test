@@ -49,7 +49,7 @@ const claimConditions = useClaimConditions(nftDrop);
         </h2>
         <hr className="w-full  border-yellow-200" />
         <p className="text-base text-white lg:text-lg md:text-md mb-6 sm:px-4 py-5 font-Proza">
-        SKY GODZ Stargazer Lyra Founder NFTs are unique digital avatars, ERC-721, ERC-1155 ERC-6551, that give you access to all game, anime and webtoon content on the Stardapp, as well as special airdrops and access to the DeFi games.
+        SKY GODZ Stargazer Lyra Founder NFTs are unique digital avatars, ERC-721, ERC-1155 and ERC-6551, that give you access to all game, anime and webtoon content on the Stardapp, as well as special airdrops and access to the DeFi games.
         </p>
       </div>
 

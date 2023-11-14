@@ -16,21 +16,21 @@ const Token = () => {
       return (
 
 
-        <div className="justify-center px-4 py-2 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-lg md:px-24 lg:px-8 lg:pt-4">
+        <div className="justify-center px-4 py-16 mx-auto  sm:px-4 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-8">
         <div className="max-w-screen-sm sm:text-center sm:mx-auto">
           
   
-            <div className="m-auto w-96 py-2">
-            <Image
-            className="m-auto w-96 py-2"
-            src="/assets/star_divider.svg"
-            alt="Star Divider"
-            width={1260}
-            height={750}
-          />
+        <div className="m-auto w-96">
+        <Image
+        className="m-auto py-2"
+        src="/assets/star_divider.svg"
+        alt="Star Divider"
+        width={1260}
+        height={750}
+      />
             </div>
 
-            <h2 className="m-auto mb-4 text-3xl font-semibold text-center tracking-wider text-yellow-100 sm:text-3xl sm:leading-none sm:m-auto font-Cinzel py-5">
+            <h2 className="m-auto mb-4 text-2xl text-center font-semibold tracking-wider text-yellow-100 sm:text-3xl sm:leading-none sm:m-auto font-Cinzel py-3">
             SKY GODZ  -TOKENS
             </h2>
             <hr className="w-full  border-yellow-200" />
@@ -83,7 +83,7 @@ className="flex-grow  h-10 px-2 mb-3 text-black text-base transitiom duration-20
               height={750}
             />
 
-<h1 className="text-yellow-100 font-bold text-center text-2xl">STARDUST Token</h1>
+<h1 className="text-yellow-100 font-semibold text-center text-2xl">STARDUST Token</h1>
 <h2 className="text-white text-md text-center py-2">Claim STARDUST Tokens</h2>
 
   
