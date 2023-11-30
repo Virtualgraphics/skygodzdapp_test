@@ -6,7 +6,7 @@ type GiftProps = {
     nft: NFT;
 };
 
-export const Gift = ({ nft }: GiftProps) => {
+const Gift = ({ nft }: GiftProps) => {
     const address = useAddress();
     const currentDate = new Date();
 
@@ -60,3 +60,5 @@ export const Gift = ({ nft }: GiftProps) => {
         </div>
     )
 };
+
+export default Gift;
