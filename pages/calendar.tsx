@@ -1,6 +1,5 @@
 import { Default } from '../components/layouts/Default';
-import { Calendar } from '../components/templates/calendar';
-
+import { Calendar } from '../components/templates/adventcalendar';
 import type { NextPage } from 'next';
 
 const CALENDAR: NextPage = () => {

@@ -28,23 +28,57 @@ const Gift = ({ nft }: GiftProps) => {
 
     return (
         <div className="flex flex-col justify-center m-auto max-w-screen-xl">
-            <div className="relative">
+            <div className="relative mt-8">
                 {!isLoadingIsOwned && !isLoadingClaimCondition && isOwned && (
                     <>
                         <MediaRenderer
                             src={isDatePassed && isOwned.toNumber() > 0 ? nft.metadata.image : "https://www.skygodz.com/wp-content/uploads/2023/11/hyperverse_cover.jpg"}
-                            className="rounded-lg"
+                            className="rounded-3xl"
                         />
-                        <h3 className="absolute mt-0 ml-8 text-black text-lg font-semibold rounded-lg bg-white">Day {displayGiftDay}</h3>
+                        <h3 style={{
+                            position: "absolute",
+                            top: "20px",
+                            left: "20px",
+                            color: "#333333",
+                            fontSize: "16px",
+                            fontWeight: "bold",
+                            padding: "5px 10px",
+                            borderRadius: "10px",
+                            backgroundColor: "#ffffff",
+                        }}>Day {displayGiftDay}</h3>
                         {address && (
                             isOwned.toNumber() > 0 ? (
-                                <p className="absolute mb-3 ml-1/2 w-4/5 bg-blue-900 text-blue-100 text-lg font-semibold rounded-lg p-4 text-center ">Claimed!</p>
+                                <p style={{
+                                    position: "absolute",
+                                    bottom: "5px",
+                                    left: "50%",
+                                    transform: "translate(-50%, 0)",
+                                    backgroundColor: "darkblue",
+                                    color: "lightblue",
+                                    fontSize: "14px",
+                                    fontWeight: "bold",
+                                    borderRadius: "10px",
+                                    padding: "10px",
+                                    width: "80%",
+                                    textAlign: "center",
+                                }}>Claimed!</p>
                             ) : (
                                 <Web3Button
                                     contractAddress={"0xE2aF53cDcad7e9C838BfFAF69C82dc4fcE0506AF"}
                                     action={(contract) => contract.erc1155.claim(nft.metadata.id, 1)}
                                     isDisabled={!isDatePassed || isOwned.toNumber() > 0}
-                                    className="absolute mb-0 ml-0 bg-white text-black text-xl font-semibold rounded-t-none rounded-b-lg p-4 w-100"
+                                    style={{
+                                        position: "absolute",
+                                        bottom: "0px",
+                                        left: "0px",
+                                        backgroundColor: isDatePassed ? "#FFFFFF" : "#CCCCCC",
+                                        color: "#333333",
+                                        fontSize: "18px",
+                                        fontWeight: "bold",
+                                        borderRadius: "0px 0px 10px 10px",
+                                        padding: "10px",
+                                        width: "100%",
+                                    }}
                                 >{
                                     isDatePassed ? (
                                         isOwned.toNumber() > 0 ? "Alien Claimed" : "Claim Alien"
