@@ -93,7 +93,7 @@ const CALENDAR = () => {
       <Stepper/>
 
       <div>
-        <h3 className="text-white font-Proza text-sm text-center ">Polygon Aliens NFT ERC-1155 contract address: 0xE43E3d5Cbc74e6595a98db1eecfc64B90b2f2Ced</h3>
+        <h3 className="text-white font-Proza text-sm text-center sm:py-8 md:py-8 ">Polygon Aliens NFT ERC-1155 contract address: 0xE43E3d5Cbc74e6595a98db1eecfc64B90b2f2Ced</h3>
       </div>
       
     </div>
