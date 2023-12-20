@@ -164,9 +164,9 @@ Blast off into the Hyperverse with the SKY GODZ: Hyperverse Gamefi Experience:
               Get cosmic energy sources and galactic staffs in the shop. The first energy source is free but all the others need to be bought with HYPER Tokens which you can only obtain by playing the HYPERVERSE game. Check stats for accumulated rewards.
 
               </p>
-             
+              <Link href="/hypershop">        
 <button className="bg-blue-500 hover:bg-blue-700 text-white w-40 h-10 font-bold  px-4 rounded mt-1">
-            Shop now</button>
+            Shop now</button></Link>
             
             </div>
           </div>

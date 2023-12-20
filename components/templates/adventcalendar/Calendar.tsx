@@ -110,7 +110,24 @@ const CALENDAR = () => {
             }}
           />
           <h1 className="text-white text-center text-xl py-8">Connect wallet to claim Alien NFT.</h1>
-          <ConnectWallet/>
+          <ConnectWallet
+           style={{
+            position: "absolute",
+            bottom: "0px",
+            left: "0px",
+            backgroundColor:  "#000000" ,
+            color: "#333333",
+            fontSize: "18px",
+            fontWeight: "bold",
+            borderRadius: "0px 0px 10px 10px",
+            padding: "10px",
+            width: "100%",
+        }}
+          
+          
+          
+          
+          />
         </div>
       )}
       
