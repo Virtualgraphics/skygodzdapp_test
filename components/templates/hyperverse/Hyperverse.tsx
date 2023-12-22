@@ -207,7 +207,7 @@ Blast off into the Hyperverse with the SKY GODZ: Hyperverse Gamefi Experience:
              HYPERSLEEP GAME
               </h5>
               <p className="mb-5 text-gray-300 text-md font-Proza">
-              Send your Akasha Alien on extended journey to the core of the Hyperverse and get additional HYPER Token rewards. Starting on December 30, 2023 only here. You need to be a holder of at least 1 Akasha alien. Don't miss out...
+              Send your Akasha Alien on extended journey to the core of the Hyperverse and get additional HYPER Token rewards. Starting on December 30, 2023 only here. You need to be a holder of at least 1 Akasha alien. Stay tuned...
 
               </p>
              
