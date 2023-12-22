@@ -7,7 +7,7 @@ import {
     useContract } from "@thirdweb-dev/react";
 
 import { NFT } from "@thirdweb-dev/sdk";
-import { ENERGY_ADDRESS } from "../../../const/addresses";
+import { ENERGY_ADDRESS } from "../../../constants/addresses";
 import { ethers } from "ethers";
 
 type Props = {

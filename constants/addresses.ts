@@ -1,0 +1,16 @@
+export const AKASHA_ADDRESS = '0x7A6Ed58597a2dac370984544BB779bbE0397d3fF';
+
+export const ENERGY_ADDRESS = '0x0026Da65229FF984B0E61d84B62B09BF5710d633';
+
+export const REWARDS_ADDRESS = '0x7aFD1de6D8eF342a9CD903E4A5A04c6078420e6f';
+
+export const STAKING_ADDRESS = '0xda4641D0BFCC6Bd705AC8843Dd7Edf9b824B4d68';
+
+
+export const NFT_CONTRACT_ADDRESS = "0xE2aF53cDcad7e9C838BfFAF69C82dc4fcE0506AF";
+
+export const GIFT_URI = "https://www.skygodz.com/wp-content/uploads/2023/11/hyperverse_cover.jpg";
+
+
+
+
