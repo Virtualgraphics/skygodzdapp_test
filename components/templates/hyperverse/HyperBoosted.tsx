@@ -24,7 +24,7 @@ export const HyperBoosted = (props: EquippedProps) => {
     return (
         <div  p-2>
             {nft && (
-                <div className="mx-auto justify-center">
+                <div className="mx-auto justify-center py-4">
                     <div className=' mx-auto justify-center '>
                         <div className=" w-48">
                             <MediaRenderer

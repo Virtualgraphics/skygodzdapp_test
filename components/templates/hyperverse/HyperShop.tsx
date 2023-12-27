@@ -139,7 +139,7 @@ const { contract } = useContract(ENERGY_ADDRESS);
 
        
 
-        <p className="text-base text-white text-center lg:text-lg md:text-lg sm:px-4 pt-6 font-Jost">
+        <p className="text-base text-white text-center lg:text-lg md:text-lg sm:px-4 py-6 font-Jost">
        Purchase COSMIC ENERGY NFTs with HYPER tokens to boost your Akasha Alien power and gain more HYPER. 
         </p>
         </div>
