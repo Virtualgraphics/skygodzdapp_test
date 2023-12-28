@@ -84,7 +84,7 @@ const Hypersleep: NextPage = () => {
 <div className="max-w-screen-xl sm:text-center sm:mx-auto">
             
     
-       <div className="m-auto w-96py-2">
+       <div className="m-auto w-96 py-2">
        <Image
        className="m-auto w-96 py-2"
        src="/assets/star_divider.svg"
@@ -140,10 +140,15 @@ const Hypersleep: NextPage = () => {
 
       ) : (
         <>
-          <h2 className="text-white pb-4">My Tokens</h2>
-          <div className="grid grid-row-2 gap-4">
 
-            <div className="w-full h-full p-4 border border-yellow-100 rounded-xl flex flex-col justify-items-center m-auto">
+<div className="grid grid-row-3 gap-4">
+         <div>
+          <h2 className="text-white pb-4 font-semibold text-center text-lg">My Tokens</h2>
+         </div>
+
+         
+
+            <div className="sm:w-full md:w-full lg:w-1/2 h-full p-4 border border-yellow-100 rounded-xl flex flex-col justify-items-center m-auto">
               <h3 className="my-0 font-Jost  text-yellow-100">Claimable Rewards</h3>
               <p className="text-base my-2 text-white font-Jost">
                 <b>
@@ -154,11 +159,11 @@ const Hypersleep: NextPage = () => {
                 {tokenBalance?.symbol}
               </p>
             </div>
+            
 
-
-            <div className="w-full h-full p-4 border border-yellow-100 rounded-xl flex flex-col justify-items-center m-auto">
+            <div className="sm:w-full md:w-full lg:w-1/2 h-full p-4 border border-yellow-100 rounded-xl flex flex-col justify-items-center m-auto">
               <h3 className="my-0 font-Jost  text-yellow-100">Current Balance</h3>
-              <p className="text-base my-2  font-Jost">
+              <p className="text-medium my-2 text-white font-Jost tracking-wide">
                 <b>{tokenBalance?.displayValue}
                 </b> {" "}
                 
@@ -168,7 +173,7 @@ const Hypersleep: NextPage = () => {
           </div>
 
 
-          <div className="py-8">
+          <div className="py-8 text-center">
           <Web3Button
             action={(contract) => contract.call("claimRewards")}
             contractAddress={stakingContractAddress}
@@ -178,10 +183,38 @@ const Hypersleep: NextPage = () => {
           </div>
 
           
-          <h2 className="text-white pb-4">My Akasha NFTs</h2>
+
+          <h2 className="text-white text-lg font-medium font-Proza pb-8 text-center">My Akasha NFTs</h2>
 
          
-          <div className="max-w-3xl">
+      
+        
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
+            {ownedNfts?.map((nft) => (
+              <div className="justify-center" key={nft.metadata.id.toString()}>
+                <ThirdwebNftMedia
+                  metadata={nft.metadata}
+                  className="h-32 rounded-2xl shadow-2xl"
+                />
+
+                <div className="w-full text-white justify-center mx-auto text-center">
+                <h3 className="pt-4">{nft.metadata.name}</h3>
+
+                <div className="py-6">
+                <Web3Button
+                  contractAddress={stakingContractAddress}
+                  action={() => stakeNft(nft.metadata.id)}
+                >
+                  Stake Akasha
+                </Web3Button></div> </div>
+              </div>
+            ))}
+          </div>
+
+
+          
+
+          <div className="w-full">
             {stakedTokens &&
               stakedTokens[0]?.map((stakedToken: BigNumber) => (
                 <NFThypersleep
@@ -191,29 +224,7 @@ const Hypersleep: NextPage = () => {
               ))}
           </div>
 
-          
-      
-        
-          <div className="justify-center m-auto flex w-full">
-            {ownedNfts?.map((nft) => (
-              <div className="justify-center px-4" key={nft.metadata.id.toString()}>
-                <ThirdwebNftMedia
-                  metadata={nft.metadata}
-                  className="w-full max-h-48 rounded-2xl"
-                />
-                <div className="w-11/12 text-white justify-center mx-auto">
-                <h3>{nft.metadata.name}</h3>
 
-                <div className="pt-4">
-                <Web3Button
-                  contractAddress={stakingContractAddress}
-                  action={() => stakeNft(nft.metadata.id)}
-                >
-                  Stake
-                </Web3Button></div> </div>
-              </div>
-            ))}
-          </div>
         </>
       )}
       </div>

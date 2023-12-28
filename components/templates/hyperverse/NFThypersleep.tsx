@@ -30,7 +30,7 @@ import {
             {nft.metadata && (
               <ThirdwebNftMedia
                 metadata={nft.metadata}
-                className="w-full max-h-48 justify-center m-auto"
+                className="w-full h-32 justify-center m-auto"
               />
             )}
             <h3 className="py-2">{nft.metadata.name}</h3>
