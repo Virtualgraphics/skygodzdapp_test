@@ -7,6 +7,7 @@ import {
   useOwnedNFTs,
   useTokenBalance,
   Web3Button,
+
 } from "@thirdweb-dev/react";
 import { BigNumber, ethers } from "ethers";
 import type { NextPage } from "next";
@@ -16,7 +17,7 @@ import Image from 'next/image'
 import Spinner from "../../layouts/Spinner";
 
 import NFThypersleep from "./NFThypersleep";
-
+import styles from '/styles/Home.module.css'
 
 
 const Hypersleep: NextPage = () => {
@@ -78,6 +79,7 @@ const Hypersleep: NextPage = () => {
 
 
 
+
   return (
 
     <div className="justify-center px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
@@ -130,9 +132,10 @@ const Hypersleep: NextPage = () => {
        <div className="justify-center m-auto flex-row">
 <h1 className="text-white font-Jost pb-8 text-center w-96 ">Please connect a wallet and make sure you own an Akasha Alien NFT.</h1>
 <div>
-<ConnectWallet
-
-/>
+<ConnectWallet 
+       btnTitle='Login'
+       className={styles.connectButton}
+       />
 </div>
 </div>   
 
@@ -175,6 +178,7 @@ const Hypersleep: NextPage = () => {
 
           <div className="py-8 text-center">
           <Web3Button
+           className={styles.claimButton}
             action={(contract) => contract.call("claimRewards")}
             contractAddress={stakingContractAddress}
           >
@@ -186,7 +190,15 @@ const Hypersleep: NextPage = () => {
 
           <h2 className="text-white text-lg font-medium font-Proza pb-8 text-center">My Akasha NFTs</h2>
 
-         
+          <div className="w-full">
+            {stakedTokens &&
+              stakedTokens[0]?.map((stakedToken: BigNumber) => (
+                <NFThypersleep
+                  tokenId={stakedToken.toNumber()}
+                  key={stakedToken.toString()}
+                />
+              ))}
+          </div>
       
         
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
@@ -202,9 +214,11 @@ const Hypersleep: NextPage = () => {
 
                 <div className="py-6">
                 <Web3Button
+                 className={styles.boostButton}
                   contractAddress={stakingContractAddress}
                   action={() => stakeNft(nft.metadata.id)}
                 >
+                   
                   Stake Akasha
                 </Web3Button></div> </div>
               </div>
@@ -214,15 +228,7 @@ const Hypersleep: NextPage = () => {
 
           
 
-          <div className="w-full">
-            {stakedTokens &&
-              stakedTokens[0]?.map((stakedToken: BigNumber) => (
-                <NFThypersleep
-                  tokenId={stakedToken.toNumber()}
-                  key={stakedToken.toString()}
-                />
-              ))}
-          </div>
+          
 
 
         </>

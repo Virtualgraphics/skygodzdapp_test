@@ -48,8 +48,8 @@ const claimConditions = useClaimConditions(nftDrop);
         SKY GODZ: Stargazer NFT Collections
         </h2>
         <hr className="w-full  border-yellow-200" />
-        <p className="text-base text-white lg:text-lg md:text-md mb-6 sm:px-4 py-5 font-Proza">
-        SKY GODZ Stargazer Lyra Founder NFTs are unique digital avatars, ERC-721, ERC-1155 and ERC-6551, that give you access to all game, anime and webtoon content on the Stardapp, as well as special airdrops and access to the DeFi games.
+        <p className="text-base text-white lg:text-md md:text-md mb-6 sm:px-4 py-5 font-Proza">
+        SKY GODZ Stargazer Founder NFTs are unique digital avatars that give you access to all game, anime and webtoon content on the Stardapp, as well as special airdrops and access to the DeFi games.
         </p>
       </div>
 
@@ -61,7 +61,7 @@ const claimConditions = useClaimConditions(nftDrop);
 
 <div className=" pt-14 m-auto  justify-center">
 <h1 className=" text-white text-lg text-center font-semibold">
-              Use your Stargazer Lyra Founder Collection NFTs for the following cool things:
+              Use your SKY GODZ Collection NFTs for the following cool things:
             </h1></div>
 
 <div className="py-4 flex items-center justify-center">
@@ -70,15 +70,15 @@ const claimConditions = useClaimConditions(nftDrop);
           <div className="h-full p-5 rounded-r shadow-sm">
             <h6 className="mb-2 font-semibold leading-5 text-blue-300">Play the RPG with your NFT</h6>
             <p className="text-sm text-white">
-              Get access to the Stargazer: Lyra RPG and get Stardust token rewards which you can use to power-up your Stargate.
+              Get access to the Stargazer: RPG and get Stardust token rewards which you can use to power-up your Stargate.
             </p>
           </div>
         </div>
         <div className="duration-300 transform bg-blue-900 border-l-4 border-deep-purple-accent-400 hover:-translate-y-2 rounded-2xl">
           <div className="h-full p-5  rounded-r shadow-sm">
-            <h6 className="mb-2 font-semibold leading-5 text-blue-300">Power up your Stargate</h6>
+            <h6 className="mb-2 font-semibold leading-5 text-blue-300">Play the HYPERVERSE Game</h6>
             <p className="text-sm text-white">
-              Use the NFT to claim your Stargate NFT which you can power up with energy sources to get you to your homeworld.
+            Login with your Akasha alien and mint cosmic energy sources NFTs to power-up your Akasha alien and get HYPER token rewards.
             </p>
           </div>
         </div>

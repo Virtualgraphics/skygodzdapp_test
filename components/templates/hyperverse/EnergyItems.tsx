@@ -9,6 +9,7 @@ import {
 import { NFT } from "@thirdweb-dev/sdk";
 import { ENERGY_ADDRESS } from "../../../constants/addresses";
 import { ethers } from "ethers";
+import styles from '/styles/Home.module.css'
 
 type Props = {
     nft: NFT;
@@ -44,7 +45,7 @@ function EnergyItems({ nft }: Props) {
 
 <div className='py-4 flex items-center justify-center m-auto'>
             <Web3Button 
-            
+            className={styles.claimButton}
         
                 contractAddress={ENERGY_ADDRESS}
                 action={(contract) => contract.erc1155.claim(nft.metadata.id, 1)}

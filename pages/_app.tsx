@@ -1,5 +1,8 @@
 import type { AppProps } from "next/app";
-import { ThirdwebProvider } from "@thirdweb-dev/react";
+import {
+  ThirdwebProvider,
+
+} from "@thirdweb-dev/react";
 import "../styles/globals.css";
 
 // This is the chain your dApp will work on.
@@ -14,6 +17,8 @@ function MyApp({ Component, pageProps }: AppProps) {
       activeChain={activeChain}
     >
       <Component {...pageProps} />
+
+      
     </ThirdwebProvider>
   );
 }

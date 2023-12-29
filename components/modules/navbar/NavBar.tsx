@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 import Image from 'next/image'
-import { ConnectWallet, useAddress } from "@thirdweb-dev/react";
+import { ConnectWallet } from "@thirdweb-dev/react";
 import Link from 'next/link'
+import styles from '/styles/Home.module.css'
 
 
 function NavBar() {
+
+
+
+
  const [isOpen, setIsOpen] = useState(false);
 
  return (
@@ -12,7 +17,7 @@ function NavBar() {
      <div className="flex items-center flex-shrink  lg:mr-8 lg:ml-8">
 
      <Image
-              className=" h-8 w-auto sm:w-auto justfy-left"
+              className=" h-8 w-auto sm:w-auto justfy-left text-center"
               src="/assets/skygodz_logo_thin.svg"
               alt="Sky Godz Logo"
               width={1260}
@@ -69,7 +74,14 @@ function NavBar() {
          </Link>
        </div>
        <div className="py-2 mr-12 ">
-       <ConnectWallet />
+
+       <ConnectWallet 
+       btnTitle='Login'
+       className={styles.connectButton}
+       />
+
+
+       
        </div>
      </div>
    </nav>
