@@ -23,7 +23,7 @@ const NftCard = () => {
               STAR WANDERER
               </h5>
               <p className="mb-5 text-gray-300 text-center">
-              You're a traveler among the stars without a destination. You're not ready yet to make a commitment and you can always upgrade to become a full founder.
+              You are a traveler among the stars without a destination. You are not ready yet to make a commitment and you can always upgrade to become a full founder.
               </p>
               <div className="justify-center pb-2">
 <button className="bg-blue-500 hover:bg-blue-700 text-white w-56 h-10 font-semibold  py-2 rounded  justify-center m-auto flex ">
@@ -49,7 +49,7 @@ const NftCard = () => {
               STARGAZER FOUNDER 
               </h5>
               <p className="mb-5 text-gray-300 text-center">
-              You're a member of the star family and can use your avatar to access all activities in the Stargazer Stardapp and receive exclusive airdrops.
+              You are a member of the star family and can use your avatar to access all activities in the Stargazer Stardapp and receive exclusive airdrops.
 
               </p>
              

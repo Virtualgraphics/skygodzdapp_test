@@ -17,6 +17,8 @@ import {
 } from "@thirdweb-dev/react";
 import { BigNumber, utils } from "ethers";
 import { NftCard } from '../nftcard';
+import { AkashaMint } from '../akashamint';
+import styles from '../styles/Home.module.css'
 
 const myNftDropContractAddress = "0x399C182D429c527e6621F72902698882a41125CE";
 
@@ -53,7 +55,11 @@ const claimConditions = useClaimConditions(nftDrop);
         </p>
       </div>
 
-<div className=' items-center justify-center '>
+<div className=' items-center justify-center w-full '>
+  
+<AkashaMint/>
+
+<div className="text-yellow-100 text-2xl tracking-widest font-Proza text-center font-semibold">SKY GODZ Founder Edition coming soon...</div>
 
 <NftCard/>
 
