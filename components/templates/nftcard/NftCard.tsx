@@ -4,7 +4,7 @@ import Link from 'next/link'
 const NftCard = () => {
 
     return (
-      <div className="px-4 py-4 mx-auto sm:max-w-xl sm:py-5 md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-4">
+      <div className="px-4 py-4 mx-auto sm:max-w-xl sm:py-5 md:max-w-full lg:mx-w-4xl md:px-24 lg:px-8 lg:py-4">
         <div className="grid max-w-screen-lg gap-8 row-gap-5 md:row-gap-8 sm:mx-auto lg:grid-cols-3">
 
           <div className="transition duration-300 transform bg-blue-900/10 rounded shadow-sm hover:-translate-y-1 hover:shadow md:text-center">

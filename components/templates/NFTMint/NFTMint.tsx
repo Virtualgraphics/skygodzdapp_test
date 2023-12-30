@@ -59,6 +59,19 @@ const claimConditions = useClaimConditions(nftDrop);
   
 <AkashaMint/>
 
+<div className='m-auto justify-center flex rounded-3xl bg-gradient-to-t from-blue-800/40 to-blue-900/20 mb-8 sm:max-w-xl sm:py-5 md:max-w-full lg:max-w-screen-sm'>
+
+<div>
+<h1 className='text-yellow-100 text-center font-Proza text-lg'>Cool utilities for your Akasha alien:</h1>
+<p className='text-white text-center font-Proza text-md py-2'>1. Play Hyperverse Game and get HYPER token rewards.</p>
+<p className='text-white text-center font-Proza text-md py-2'>2. Play Hypersleep Game and get HYPER token rewards.</p>
+<p className='text-white text-center font-Proza text-md py-2'>3. Get STARDUST airdrops for your HYPER token balance.</p>
+<p className='text-white text-center font-Proza text-md py-2'>4. Use your Akasha alien in the upcoming Stargazer RPG to get assets.</p>
+
+</div>
+
+</div>
+
 <div className="text-yellow-100 text-2xl tracking-widest font-Proza text-center font-semibold">SKY GODZ Founder Edition coming soon...</div>
 
 <NftCard/>
