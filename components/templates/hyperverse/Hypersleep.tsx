@@ -17,7 +17,7 @@ import Image from 'next/image'
 import Spinner from "../../layouts/Spinner";
 
 import NFThypersleep from "./NFThypersleep";
-import styles from '/styles/Home.module.css'
+import styles from '/styles/Home.module.css';
 
 
 const Hypersleep: NextPage = () => {

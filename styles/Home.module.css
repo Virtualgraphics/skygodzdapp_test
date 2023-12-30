@@ -306,11 +306,12 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  overflow: hidden;
+  
 }
 .claimValue {
   font-size: 1rem;
   overflow: hidden;
+ 
 }
 .claimInput {
   color: black;
@@ -319,7 +320,8 @@
   border: none;
   margin: 0px 0.25rem;
   width: 30%;
-  overflow: hidden;
+  
+ 
 }
 .claimBtn {
   background-color: #fff;
