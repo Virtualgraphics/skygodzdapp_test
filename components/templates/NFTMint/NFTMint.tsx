@@ -20,16 +20,12 @@ import { NftCard } from '../nftcard';
 import { AkashaMint } from '../akashamint';
 import styles from '../styles/Home.module.css'
 
-const myNftDropContractAddress = "0x399C182D429c527e6621F72902698882a41125CE";
+
 
 
 const NFTMint = () => {
 
-  const { contract: nftDrop } = useContract(myNftDropContractAddress);
-  const address = useAddress();
-const [quantity, setQuantity] = useState(1);
-const { data: contractMetadata } = useContractMetadata(nftDrop);
-const claimConditions = useClaimConditions(nftDrop);
+
     
 
   return (

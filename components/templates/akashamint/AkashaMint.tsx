@@ -86,7 +86,7 @@ const Home: NextPage = () => {
               className="rounded-2xl shadow-2xl"
                 src={contractMetadata?.image}
               />
-              <p className="text-white font-thin font-Proza text-sm text-left px-8 pt-4">Max. cLaimable per wallet: 3 NFTs</p>
+              <p className="text-white font-thin font-Proza text-sm text-left px-8 pt-4">Max. cLaimable per wallet: 2 NFTs</p>
             </div>
 
 
